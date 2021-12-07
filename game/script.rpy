@@ -62,6 +62,8 @@ init:
 
 label start:
 
+    play music "<loop 0.001>WB1.mp3"
+
     scene jungClaire with dissolve
 
     e "Hi!"
@@ -69,7 +71,7 @@ label start:
     python:
         name = renpy.input(_("Wie heißt du?"))
 
-        name = name.strip() or _("Gamer")
+        name = name.strip() or _("Alfred")
 
 
     scene jungClaire
@@ -77,6 +79,9 @@ label start:
     e "Hallo, liebe(-r) [name]!"
 
     scene dorf with dissolve
+
+    play sound "horn_big.wav"
+    queue music "<loop 0.001>WB1.mp3"
 
     s "Oh, es ist schon so spät, ich sollte mich besser beeilen...Aber der Tag ist so schön.."
 
@@ -124,6 +129,9 @@ label starten:
     ausgeführt."
     e "Ich saß als Kind stundenlang auf dem Dach und spuckte hinunter. Aber nur auf
     die Männer."
+
+    scene clair_akt1_boese
+
     e "Also, meine liebe Güllener, ich sehe, unsere schöne Heimat hat ein bisschen gelitten,
     seit ich das letzte Mal zu Besuch war."
 
@@ -175,7 +183,11 @@ label starten:
 
     scene clair_akt1_froh
     e "Ihr müsst nichts anderes tun, als meinen alten Liebhaber, den guten
-    Alfred, zu töten."
+    [name], zu töten."
+    
+    stop music
+    play audio "<silence 1.0>"
+    queue music "<loop 0.001>WB2" fadein 1.0
 
     scene menge
     m "- Was? Das kann sie doch nicht ernst meinen!"
@@ -184,8 +196,8 @@ label starten:
     m "Das ist doch ein Witz! Wir sind doch keine Mörder."
 
     scene clair_akt1_boese
-    e "kein Scherz, nur Gerechtigkeit.Ich kann sie mir leisten."
-    e "Eine Milliarde für Güllen, wenn jemand Alfred Ill tötet."
+    e "Kein Scherz, nur Gerechtigkeit.Ich kann sie mir leisten."
+    e "Eine Milliarde für Güllen, wenn jemand [name] tötet."
 
     scene menge
     m "Niemals! Wir würden uns nie so verkaufen!"
