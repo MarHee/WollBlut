@@ -187,7 +187,7 @@ label starten:
     
     stop music
     play audio "<silence 1.0>"
-    queue music "<loop 0.001>WB2" fadein 1.0
+    queue music "<loop 0.001>WB2"
 
     scene menge
     m "- Was? Das kann sie doch nicht ernst meinen!"
