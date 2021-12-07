@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-The label choice1_ja is defined twice, at File "game/script.rpy", line 90:
-    label choice1_ja:
-and File "game/script.rpy", line 207:
-    label choice1_ja:
+File "game/script.rpy", line 190: expected simple expression
+    queue music "<loop 0.001>audio/WB2.mp3" fadein
+                                                  ^
 
-
-The label choice1_nein is defined twice, at File "game/script.rpy", line 97:
-    label choice1_nein:
-and File "game/script.rpy", line 212:
-    label choice1_nein:
-
-
-Ren'Py Version: Ren'Py 7.4.11.2228
-Tue Dec  7 17:50:01 2021
+Ren'Py Version: Ren'Py 7.4.10.2178
+Tue Dec  7 21:17:06 2021

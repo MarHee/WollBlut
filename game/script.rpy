@@ -62,7 +62,7 @@ init:
 
 label start:
 
-    play music "<loop 0.001>WB1.mp3"
+    play music "<loop 0.001>audio/WB1.mp3"
 
     scene jungClaire with dissolve
 
@@ -80,8 +80,8 @@ label start:
 
     scene dorf with dissolve
 
-    play sound "horn_big.wav"
-    queue music "<loop 0.001>WB1.mp3"
+    play sound "audio/horn_big.wav"
+    queue music "<loop 0.001>audio/WB1.mp3"
 
     s "Oh, es ist schon so spät, ich sollte mich besser beeilen...Aber der Tag ist so schön.."
 
@@ -184,10 +184,10 @@ label starten:
     scene clair_akt1_froh
     e "Ihr müsst nichts anderes tun, als meinen alten Liebhaber, den guten
     [name], zu töten."
-    
+
     stop music
-    play audio "<silence 1.0>"
-    queue music "<loop 0.001>WB2"
+    play audio "<silence 3.0>"
+    queue music "<loop 0.001>audio/WB2.mp3" fadein 5.0
 
     scene menge
     m "- Was? Das kann sie doch nicht ernst meinen!"
@@ -215,11 +215,13 @@ label starten:
             jump choice2_ja
         "Das Leben genießen":
             jump choice2_nein
+
     label choice2_ja:
         $ menu_flag = True
         scene game_over
         "Oh...du Arme.."
         #jump choice1_done
+
     label choice2_nein:
         $ menu_flag = False
         scene beautiful_life
