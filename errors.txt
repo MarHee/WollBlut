@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 905: u'substitute' is not a keyword argument or valid child for the label statement.
+    substitute False
+              ^
+
+Ren'Py Version: Ren'Py 6.99.14.1.3218
+Tue Dec  7 16:38:04 2021
