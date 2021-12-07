@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 190: expected simple expression
-    queue music "<loop 0.001>audio/WB2.mp3" fadein
-                                                  ^
+File "game/screens.rpy", line 530: style property ccff is not known.
+    color 99ccff 
+                ^
 
-Ren'Py Version: Ren'Py 7.4.10.2178
-Tue Dec  7 21:17:06 2021
+Ren'Py Version: Ren'Py 7.4.11.2228
+Tue Dec  7 23:22:58 2021

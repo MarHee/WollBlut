@@ -60,6 +60,8 @@ init:
 
     image beautiful_life = "gg/beautiful_life.png"
 
+    image danke = "gg/danke.png"
+
 label start:
 
     play music "<loop 0.001>audio/WB1.mp3"
@@ -220,10 +222,19 @@ label starten:
         $ menu_flag = True
         scene game_over
         "Oh...du Arme.."
-        #jump choice1_done
+        jump choice2_done
 
     label choice2_nein:
         $ menu_flag = False
         scene beautiful_life
-        e "Oh ja!"
-        #jump choice1_done
+        "Oh ja!"
+        jump choice2_done
+
+    label choice2_done:
+        scene danke with dissolve
+
+
+label end:
+        scene danke with dissolve
+
+        return
