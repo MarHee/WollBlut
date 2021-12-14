@@ -1,4 +1,4 @@
-Tue Dec 14 16:14:59 2021
+Tue Dec 14 17:26:37 2021
 Windows-10-10.0.22000
 Ren'Py 7.4.11.2228
  
@@ -7,15 +7,14 @@ Bootstrap to the start of init.init took 0.06s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata. took 0.07s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
+Running init code took 0.04s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Toyas\\AppData\\Roaming/RenPy/backups\\WollBlut':
 Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -27,15 +26,15 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.05s
+Interface start took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2256, 1504)
@@ -45,7 +44,5 @@ Vendor: 'Intel'
 Renderer: 'Intel(R) Iris(R) Xe Graphics'
 Version: '4.6.0 - Build 27.20.100.8853'
 Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(2153, 1211) drawable=(2153, 1211)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1280, 720) physical=(2256, 1464) drawable=(2256, 1464)
+Screen sizes: virtual=(1280, 720) physical=(2154, 1212) drawable=(2154, 1212)
 Maximum texture size: 4096x4096

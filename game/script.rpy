@@ -5,8 +5,9 @@
 
 define e = Character("Claire")
 define a = Character("Kara first")
-define s = Character("[name]")
+#define s = Character("[name]")
 define m = Character("Menge")
+
 
 #Kram für später
 #image smile = Movie(play="images/video/smile.webm") - Video Inizialisierung
@@ -70,15 +71,15 @@ label start:
 
     e "Hi!"
 
-    python:
-        name = renpy.input(_("Wie heißt du?"))
+    #python:
+        #name = renpy.input(_("Wie heißt du?"))
 
-        name = name.strip() or _("Alfred")
+        #name = name.strip() or _("Alfred")
 
 
     scene jungClaire
 
-    e "Hallo, liebe(-r) [name]!"
+    e "Hallo, lieber Alfred!"
 
     scene dorf with dissolve
 
@@ -87,7 +88,6 @@ label start:
 
     s "Oh, es ist schon so spät, ich sollte mich besser beeilen...Aber der Tag ist so schön.."
 
-    #e "[name], was möchtest du machen?"
 
     menu:
         "Beeilen":
@@ -97,7 +97,7 @@ label start:
     label choice1_ja:
         $ menu_flag = True
         scene zug
-        "fffff"
+        "Zug kommt pfeifend zum Stehen"
         #$ renpy.movie_cutscene("images/video/smile.webm") - um Video zu starten
         jump starten
         #jump choice1_done
@@ -190,7 +190,7 @@ label starten:
 
     scene clair_akt1_froh
     e "Ihr müsst nichts anderes tun, als meinen alten Liebhaber, den guten
-    [name], töten."
+    Alfred, töten."
 
     stop music
     play audio "<silence 3.0>"
@@ -207,7 +207,7 @@ label starten:
     scene clair_akt1_boese
     e "Kein Scherz, nur Gerechtigkeit."
     e "Ich kann sie mir leisten."
-    e "Eine Milliarde für Güllen, wenn jemand [name] tötet."
+    e "Eine Milliarde für Güllen, wenn jemand Alfred tötet."
 
     scene menge
     m "Niemals!"
@@ -221,7 +221,7 @@ label starten:
     e "Lasst euch Zeit. Ich warte."
 
     scene zug
-    "fffff"
+    "Zug kommt pfeifend zum Stehen"
 
     menu:
         "Vor den Zug werfen":
