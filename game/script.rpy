@@ -97,7 +97,7 @@ label start:
     label choice1_ja:
         $ menu_flag = True
         scene zug
-        "Zug kommt pfeifend zum Stehen"
+        "fffff"
         #$ renpy.movie_cutscene("images/video/smile.webm") - um Video zu starten
         jump starten
         #jump choice1_done
@@ -117,24 +117,25 @@ label starten:
 
     scene menge
 
-    m "Eine wahre Schande!
-    Früher haben hier die edelsten Schnellzüge gehalten!"
+    m "Eine wahre Schande!"
+    m "Früher haben hier die edelsten Schnellzüge gehalten!"
     m "Das waren noch Zeiten..."
 
     m "Sieh mal Mama, die Ohrringe!"
     m "Ist das ein Sarg den Sie da mitgebracht hat?"
-    m "ach, sicher nur so ein modischer Koffer"
+    m "Ach, sicher nur so ein modischer Koffer."
 
     scene clair_akt1_froh
 
-    e "Oh seht mal, die alte Bedürfnisanstalt hat mein Vater errichtet. Gute Arbeit, exakt
-    ausgeführt."
-    e "Ich saß als Kind stundenlang auf dem Dach und spuckte hinunter. Aber nur auf
-    die Männer."
+    e "Oh seht mal, die alte Bedürfnisanstalt hat mein Vater errichtet."
+    e "Gute Arbeit, exakt ausgeführt."
+    e "Ich saß als Kind stundenlang auf dem Dach und spuckte hinunter."
+    e "Aber nur auf die Männer."
 
     scene clair_akt1_boese
 
-    e "Also, meine liebe Güllener, ich sehe, unsere schöne Heimat hat ein bisschen gelitten,
+    e "Also, meine liebe Güllener.."
+    e "Ich sehe, unsere schöne Heimat hat ein bisschen gelitten,
     seit ich das letzte Mal zu Besuch war."
 
     scene menge
@@ -148,9 +149,12 @@ label starten:
 
     scene menge
 
-    m "was meint sie denn damit? Vielleicht will sie eine neue Fabrik bauen?"
-    m "Das würde uns allen Arbeit bringen! Kann sie so was denn machen?"
-    m "Hast du es nicht gehört? Die kleine Claire ist jetzt steinreich!"
+    m "Was meint sie denn damit?"
+    m "Vielleicht will sie eine neue Fabrik bauen?"
+    m "Das würde uns allen Arbeit bringen!"
+    m "Kann sie so was denn machen?"
+    m "Hast du es nicht gehört?"
+    m "Die kleine Claire ist jetzt steinreich!"
     m "Seid leise Leute, so verpassen wir ja alles...psssssssssst"
 
     scene clair_akt1_froh
@@ -164,53 +168,60 @@ label starten:
 
     scene menge
     m "Eine Milliarde?"
-    m "Wow, ich wusste ja dass sie reich ist aber...
-    Oh was für ein Segen, dafür haben wir alle gebetet!"
-    m "Wussten wir es doch, Güllener halten fest zusammen, auch nach so langer Zeit!
-    Was ist eine Milliarde, Mama?"
+    m "Wow, ich wusste ja, dass sie reich ist, aber..."
+    m "Oh was für ein Segen, dafür haben wir alle gebetet!"
+    m "Wussten wir es doch, Güllener halten fest zusammen, auch nach so langer Zeit!"
+    m "Was ist eine Milliarde, Mama?"
     m "Ich weiß gar nicht, wie viele Nullen das sind."
 
     scene clair_akt1_froh
-    e "Ähem. Natürlich habe ich meine stattlichen Mittel nicht komplett durch Philanthropie erhalten,
+    e "Ähem. Natürlich habe ich meine stattlichen Mittel nicht komplett durch reine Menschenliebe erhalten,
     so schön das auch wäre."
     e "Auch wenn mein Angebot schon sehr daran grenzt, wenn ich es recht überdenke."
-    e "Liebe Güllener, meine Großzügigkeit ist an eine minimale, winzig winzig kleine
-    Bedingung gebunden."
-    e "Kaum der Rede wert, wenn wir alle uns ausmalen, was diese Mittel unserer schönen Stadt bringen könnten. Mehr ein Zeichen der
-    Wertschätzung als ein Handel, wenn ihr mich fragt."
+    e "Liebe Güllener..."
+    e "Meine Großzügigkeit ist an eine minimale, winzig kleine
+    Bedingung gebunden." #winzig? wiederholt?
+    e "Kaum der Rede wert, wenn wir alle uns ausmalen, was diese Mittel unserer schönen Stadt bringen könnten."
+    e "Mehr ein Zeichen der Wertschätzung als ein Handel, wenn ihr mich fragt."
 
     scene clair_akt1_boese
-    e "Also, einen ganz ganz kleinen Gefallen, den ihr mir tun müsst, bevor ich den
-    Scheck aushändige, den ich schon in meinen Unterlagen vorbereitet habe."
+    e "Also, einen ganz kleinen Gefallen, den ihr mir tun müsst, bevor ich den
+    Scheck aushändige, den ich schon in meinen Unterlagen vorbereitet habe." #ganz? wiederholt?
 
     scene clair_akt1_froh
     e "Ihr müsst nichts anderes tun, als meinen alten Liebhaber, den guten
-    [name], zu töten."
+    [name], töten."
 
     stop music
     play audio "<silence 3.0>"
     queue music "<loop 0.001>audio/WB2.mp3" fadein 5.0
 
     scene menge
-    m "- Was? Das kann sie doch nicht ernst meinen!"
-    m "Sicherlich nur ein Scherz unter alten Freunden. Ich wusste ja, dass
-    die Trennung nicht schön war, aber so was?"
-    m "Das ist doch ein Witz! Wir sind doch keine Mörder."
+    m "Was?"
+    m "Das kann sie doch nicht ernst meinen!"
+    m "Sicherlich nur ein Scherz unter alten Freunden."
+    m "Ich wusste ja, dass die Trennung nicht schön war, aber so was?"
+    m "Das ist doch ein Witz!"
+    m "Wir sind doch keine Mörder."
 
     scene clair_akt1_boese
-    e "Kein Scherz, nur Gerechtigkeit.Ich kann sie mir leisten."
+    e "Kein Scherz, nur Gerechtigkeit."
+    e "Ich kann sie mir leisten."
     e "Eine Milliarde für Güllen, wenn jemand [name] tötet."
 
     scene menge
-    m "Niemals! Wir würden uns nie so verkaufen!"
-    m "Niemand von uns ist ein Mörder! Ich wusste es ja immer, sie ist verrückt!"
-    m "Wahre Güllener halten zusammen!Was denkt sie, wen sie hier vor sich hat?"
+    m "Niemals!"
+    m "Wir würden uns nie so verkaufen!"
+    m "Niemand von uns ist ein Mörder!"
+    m "Ich wusste es ja immer, sie ist verrückt!"
+    m "Wahre Güllener halten zusammen!"
+    m "Was denkt sie, wen sie hier vor sich hat?"
 
     scene clair_akt1_froh
     e "Lasst euch Zeit. Ich warte."
 
     scene zug
-    "Zugpfeiffe"
+    "fffff"
 
     menu:
         "Vor den Zug werfen":
